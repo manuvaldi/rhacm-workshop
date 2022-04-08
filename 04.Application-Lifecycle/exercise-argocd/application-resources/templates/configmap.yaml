@@ -6,6 +6,3 @@ kind: ConfigMap
 metadata:
   name: application-prod
   namespace: {{ .Values.namespace }}
-  annotations:
-    argocd.argoproj.io/compare-options: IgnoreExtraneous
-    argocd.argoproj.io/sync-options: Prune=false
