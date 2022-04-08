@@ -6,6 +6,7 @@ metadata:
     app: webserver
   namespace: {{ .Values.namespace }}
 spec:
+revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: webserver
